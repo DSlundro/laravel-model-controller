@@ -13,8 +13,8 @@ class PageController extends Controller
         $movies = Movie::all();
         //dd($movies);
         return view('/layouts/app', compact('movies'));
-        return view('header');
-        return view('footer');
-        return view('cards');
+        return view('/conponents/header');
+        return view('/conponents/footer');
+        return view('/partials/cards');
     }
 };

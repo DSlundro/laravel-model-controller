@@ -1,9 +1,7 @@
-@extends('layout.app')
 
-@section('content')
 <div class="container">
         <div class="row row-cols-3 justify-content-center py-4">
-            @foreach ($movies as $movie)
+            @foreach ($movies as $key => $movie)
                 <div class="col bg-col">
                     <div class="my-card text-white">
                         <div class="card-body">
@@ -18,4 +16,3 @@
             @endforeach
         </div>
     </div>
-@endsection
